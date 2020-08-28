@@ -1,6 +1,8 @@
 public class DAO {
-    Database database = new Database();
+    protected Database db = new Database();
 
-    public void cadastrarClienteDAO();
+    public void cadastrarClienteDAO(Cliente umCliente) {
+        db.adicionar(umCliente);
+    }
     
 }

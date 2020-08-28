@@ -4,7 +4,14 @@ public class Cliente {
     private String email;
     private String telefone;
 
-    public String getNome () {
+    public Cliente(String nome, String email, String telefone, String codigo) {
+        this.nome = nome;
+        this.email = email;
+        this.telefone = telefone;
+        this.codigo = codigo;
+    }
+
+    public String getNome() {
         return nome;
     }
 
